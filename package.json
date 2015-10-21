@@ -5,6 +5,7 @@
   "main": "config.js",
   "scripts": {
     "js-builder": "`npm bin`/jspm bundle js/main build/main.js --minify --inject",
+    "js-unbuilder": "`npm bin`/jspm unbundle",
     "css-builder": "`npm bin`/node-sass --include-path scss --output-style compressed scss/main.scss build/main.css --source-map build",
     "css-watcher": "`npm bin`/node-sass --watch --include-path scss --output-style compressed scss/main.scss build/main.css --source-map build",
     "dev-server": "`npm bin`/jspm-server --only-exts='.js, .jsx, .html, .css'"
