@@ -4,10 +4,10 @@
   "description": "",
   "main": "config.js",
   "scripts": {
-    "build-js": "`npm bin`/jspm bundle js/main build/main.js --minify --inject",
-    "build-css": "`npm bin`/node-sass --include-path scss --output-style compressed scss/main.scss build/main.css --source-map build",
-    "watch-css": "`npm bin`/node-sass --watch --include-path scss --output-style compressed scss/main.scss build/main.css --source-map build",
-    "run-server": "`npm bin`/jspm-server --only-exts='.js, .jsx, .html, .css'"
+    "js-builder": "`npm bin`/jspm bundle js/main build/main.js --minify --inject",
+    "css-builder": "`npm bin`/node-sass --include-path scss --output-style compressed scss/main.scss build/main.css --source-map build",
+    "css-watcher": "`npm bin`/node-sass --watch --include-path scss --output-style compressed scss/main.scss build/main.css --source-map build",
+    "dev-server": "`npm bin`/jspm-server --only-exts='.js, .jsx, .html, .css'"
   },
   "author": {
     "name": "Cansin Yildiz",
